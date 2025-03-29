@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLSAC BVP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo"><img id="myImage" src='Resources/misc/MLSCLogo.png' alt='MLSAC Logo'></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#team">Team</a>
+            <button id="theme-toggle">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <section id="home">
+        <canvas class="particles-canvas"></canvas>
+        <div class="hero-logo"> <img src="Resources/misc/92207324.png" alt="MLSAC Logo"></div>
+        <h1>Microsoft Learn Student Ambassador Chapter</h1>
+        <h2>Bharati Vidyapeeth's College of Engineering</h2>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content fade-in">
+            <h2 class="section-title">About MLSAC BVP</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">Empowering the next generation of tech leaders</p>
+                    <p>We are Microsoft Learn Student Ambassadors at Bharati Vidyapeeth's College of Engineering,
+                        creating a vibrant community of innovators. Through hands-on workshops, cutting-edge hackathons,
+                        and collaborative projects, we foster technical excellence and leadership skills.</p>
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Events Hosted</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Members</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card"><img src="Resources/misc/WhatsApp Image 2025-02-19 at 08.31.33_bb733c3a.jpg"
+                            alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2 class="section-title fade-in">Our Signature Events</h2>
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="event-card fade-in">
+                <div class="event-image"
+                    style="background-image: url('Resources/misc/bugsmash.jpg');">
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">BugSmash </h3>
+                    <div class="event-description">
+                        <p>A two-round debugging showdown where participants first hunted down sneaky errors on paper
+                            and then optimized messy code. Only the sharpest minds conquered the bugs!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card fade-in">
+                <div class="event-image" style="background-image: url('Resources/misc/trp.JPG');"></div>
+                <div class="event-content">
+                    <h3 class="event-title">Tech, Rumble aur Panchayat</h3>
+                    <div class="event-description">
+                        <p>A high-energy tech battle featuring intense group discussions, rapid-fire domain-based
+                            questions, and a fierce cross-questioning round. The best tech minds went head-to-head!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card fade-in">
+                <div class="event-image" style="background-image: url('Resources/misc/creaticon.jpg');"></div>
+                <div class="event-content">
+                    <h3 class="event-title">CreatiCon </h3>
+                    <div class="event-description">
+                        <p>A fusion of ideation and design! Teams bid for their preferred domain, pitched groundbreaking
+                            ideas, and crafted unique logos. Innovation and creativity ruled the day!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card fade-in">
+                <div class="event-image" style="background-image: url('Resources/misc/dsrush.jpg');"></div>
+                <div class="event-content">
+                    <h3 class="event-title">DS' Rush</h3>
+                    <div class="event-description">
+                        <p>A fast-paced, offline DSA challenge where solo coders raced against time to solve complex
+                            problems. A true test of speed and logic!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-card fade-in">
+                <div class="event-image" style="background-image: url('Resources/misc/webdverse.jpg');"></div>
+                <div class="event-content">
+                    <h3 class="event-title">Web-D-Verse</h3>
+                    <div class="event-description">
+                        <p>A web development face-off where teams first received expert mentoring, then showcased their
+                            creativity by designing a logo for their project. A playground for web wizards!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="event-card fade-in">
+                <div class="event-image" style="background-image: url('Resources/misc/tmt.jpg');"></div>
+                <div class="event-content">
+                    <h3 class="event-title">Tech Mon Tech</h3>
+                    <div class="event-description">
+                        <p>A thrilling tech treasure hunt! Participants cracked technical riddles from various domains,
+                            unlocking codes to progress through each stage. The fastest problem-solver claimed victory
+                            in this ultimate CTF-style challenge!</p>
+                        <a href="#" class="event-cta">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team fade-in">
+        <h2>Our Team</h2>
+
+        <!-- Mentor Section -->
+        <div class="mentor-section">
+            <h3>Our Mentor</h3>
+            <div class="mentor">
+                <div class="member" style="background-image: url('Resources/Leadership/hod picture.png');"></div>
+                <p class="member-name">Dr. Deepika Kumar</p>
+            </div>
+        </div>
+
+        <!-- Leadership Section -->
+        <div class="leadership">
+            <div class="leader">
+                <div class="member" style="background-image: url('chairperson1.jpg');">
+                    <a href="https://www.linkedin.com/in/bhanuja-bhardwaj-53a032221/" target="_blank"
+                        class="linkedin-link">
+                        <img src="Resources/misc/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <p class="member-name">Bhanuja Bharadwaj</p>
+                <p class="member-name">Chairperson</p>
+            </div>
+
+            <div class="leader">
+                <div class="member" style="background-image: url('Resources/Leadership/Harshitaarora.jpg');">
+                    <a href="https://www.linkedin.com/in/harshita-arora-991138227/" target="_blank"
+                        class="linkedin-link">
+                        <img src="Resources/misc/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <p class="member-name">Harshita Arora</p>
+                <p class="member-name">Chairperson</p>
+            </div>
+
+            <div class="leader">
+                <div class="member" style="background-image: url('Resources/Leadership/shauryagupta.jpg');">
+                    <a href="https://www.linkedin.com/in/shaurya-gupta-50259228a/" target="_blank"
+                        class="linkedin-link">
+                        <img src="Resources/misc/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <p class="member-name">Shaurya Gupta</p>
+                <p class="member-name">Vice Chair</p>
+            </div>
+
+            <div class="leader">
+                <div class="member" style="background-image: url('Resources/Leadership/Soumyaa miglani.jpg');">
+                        <a href="https://www.linkedin.com/in/soumyaa-miglani-474695256/" target="_blank"
+                            class="linkedin-link">
+                            <img src="Resources/misc/linkedin.png" alt="LinkedIn">
+                        </a>
+                </div>
+                <p class="member-name">Soumyaa Miglani</p>
+                <p class="member-name">Vice-Chair</p>
+            </div>
+
+            <!-- Departments Section -->
+            <div class="departments">
+                <div class="department">
+                    <h3>Technical Team</h3>
+                    <div class="team-row">
+                        
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/YASH.jpg');"></div>
+                            <p class="member-name">Yash Kapur</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Manya Dhingra _ SM.jpg');"></div>
+                            <p class="member-name">Manya Dhingra</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member"
+                                style="background-image: url('Resources/technical/Dishant_Kapoor.jpg');">
+                            </div>
+                            <p class="member-name">Dishant Kapoor</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Shreya\ Soni.PNG');"></div>
+                            <p class="member-name">Shreya Soni</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Anushka\ sharma.jpg');"></div>
+                            <p class="member-name">Anushka Sharma</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Tanishka Gupta_.jpg');"></div>
+                            <p class="member-name">Tanishka Gupta</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Naman\ Bakshi.jpg');"></div>
+                            <p class="member-name">Naman Bakshi</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Aakash\ Mahajan.jpg');"></div>
+                            <p class="member-name">Aakash Mahajan</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/vatsal.jpg');"></div>
+                            <p class="member-name">Vatsal</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Ananya\ Verma.jpg');"></div>
+                            <p class="member-name">Ananya Verma</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Adhyan.jpg');"></div>
+                            <p class="member-name">Adhyan</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Devam\ Tanwani.png');"></div>
+                            <p class="member-name">Dewam Tanwani</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department">
+                    <h3>Design Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Saksham\ Budhiraja_.jpg');"></div>
+                            <p class="member-name">Saksham</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Mansha.JPG');"></div>
+                            <p class="member-name">Mansha</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Hardik\ Balwani_.jpg');"></div>
+                            <p class="member-name">Hardik Balwani</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Devansh\ Biswas_.jpg');"></div>
+                            <p class="member-name">Devansh Biswas</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Astha.jpg');"></div>
+                            <p class="member-name">Astha</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Himanshu\ Harsh.jpg');"></div>
+                            <p class="member-name">Himanshu Harsh</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/IMG_20240218_132316.jpg');"></div>
+                            <p class="member-name">Sartaj Singh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>Event Management Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Hasdeep\ Singh.jpg');"></div>
+                            <p class="member-name">Hasdeep Singh</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Saanvi\ Jain.JPG');"></div>
+                            <p class="member-name">Saanvi Jain</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/BHAVYA\ SINGLA.jpg');"></div>
+                            <p class="member-name">Bhavya Singla</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Aryan\ Makhija.jpg');"></div>
+                            <p class="member-name">Aryan Makhija</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Kunal\ Sharma.jpg');"></div>
+                            <p class="member-name">Kunal Sharma</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Sana.jpg');"></div>
+                            <p class="member-name">Sana</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Nomesh\ Shourya\ Thakur.jpg');"></div>
+                            <p class="member-name">Nomesh Shorya Thakur</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/Ananya\ Verma.jpg');"></div>
+                            <p class="member-name">Ananya</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/Saumya\ Srivastava.jpg');"></div>
+                            <p class="member-name">Saumya Srivastava</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/technical/singhal.jpg');"></div>
+                            <p class="member-name">Keshav Singal</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/harshgupta.jpg');"></div>
+                            <p class="member-name">Harsh Gupta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>CnD Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Ananya.jpg');"></div>
+                            <p class="member-name">Ananya Singh</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Pratham\ Madan.jpeg');"></div>
+                            <p class="member-name">Pratham Madan</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Garima\ Tyagi.jpg');"></div>
+                            <p class="member-name">Garima Tyagi</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Utkarsh.jpg');"></div>
+                            <p class="member-name">Utkarsh</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Anushka\ Gupta.jpeg');"></div>
+                            <p class="member-name">Anushka Gupta</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Radhya.JPG');"></div>
+                            <p class="member-name">Radhya</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Riddhi\ Bansal.jpg');"></div>
+                            <p class="member-name">Riddhi Bansal</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/cnd/Anshika\ Jain.png');"></div>
+                            <p class="member-name">Anshika Jain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>Social Media Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/IMG_0135.PNG');"></div>
+                            <p class="member-name">Saloni</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Chitrangda.jpg');"></div>
+                            <p class="member-name">Chitrangda</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Aryan Makhija.jpg');"></div>
+                            <p class="member-name">Aryan Makhija</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Yashika.JPG');"></div>
+                            <p class="member-name">Yashika</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Nandika puri.jpg');"></div>
+                            <p class="member-name">Nandika Puri</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/IMG_1976.JPG');"></div>
+                            <p class="member-name">Aashima</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Rohan Goyal.jpg');"></div>
+                            <p class="member-name">Rohan Goyal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>Publicity Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/Design/Raghav\ Gupta.jpg');"></div>
+                            <p class="member-name">Raghav Gupta</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/saanvigoel.jpg');"></div>
+                            <p class="member-name">Saanvi Goel</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/Vidhi Gupta.jpg');"></div>
+                            <p class="member-name">Vidhi Gupta</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/vanyawadhwa.jpg');"></div>
+                            <p class="member-name">Vanya Wadhwa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>Video Editing Team</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/video editing/Shaurya Khatri_.jpg');"></div>
+                            <p class="member-name">Shaurya Khatri</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/video editing/shaurya kohli.JPG');"></div>
+                            <p class="member-name">Shaurya Kohli</p>
+                            <p class="member-name">Head</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/video editing/Yash Verma.jpg');"></div>
+                            <p class="member-name">Yash Verma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="department">
+                    <h3>Community Managers</h3>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/EM/ANAND.jpg');"></div>
+                            <p class="member-name">Anand Misra</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member" style="background-image: url('Resources/SM and publicty/chaitnya.jpg');"></div>
+                            <p class="member-name">Chaitnya Sadana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
